@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+:root{
+    font-family:'Roboto', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #152F30;
+    padding:1rem;
+}
+body>*{
+    width: 90%;
+}
+
+nav {
+    height: 2.5rem;
+    background-color: #7f9f5d;
+    display: flex;
+    align-items: center;
+    color: white; 
+    border-radius: 5px;
+    
+      
+    
+}
+
+
+
+ul {
+    list-style-type: none;
+    display:flex;  
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    
+}
+
+
+
+
+#left-nav{
+    justify-content:flex-start;
+
+    font-weight: bold;
+    color: white;
+    font-size: x-large;
+    
+}
+
+#search{
+    justify-content: center;
+    width:25%;
+    height:max-content;
+    background-color: white;
+    padding: .25rem;
+    border: 1px solid black;
+    color:black;
+}
+
+.hero {
+    
+    height: 75vh;
+    background-image: url("/photos/treeimg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.hero>* {
+    position: absolute;
+
+}
+
+.hero>img {
+    width: 20rem;
+}
+
+
+.hero>h1 {
+    color: white;
+
+}
+
+
+.midbar{
+   
+    height: 1rem;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #7f9f5d;
+}
+
+.container {
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    /*background-color: #7f9f5d;*/
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.multi-container {
+    justify-content: center;
+    background-color: #def2c8;
+    padding: 3rem;
+    margin: 1rem;
+    width:33.33%;
+    display: flex;
+    justify-content: center;
+    
+
+}
