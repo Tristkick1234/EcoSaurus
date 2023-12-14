@@ -6,6 +6,7 @@
 * {
     box-sizing: border-box;
     margin: 0 auto;
+    color: white;
 }
 
 body {
@@ -110,17 +111,17 @@ ul {
     height: 30vh;
     align-items: center;
     /*background-color: #7f9f5d;*/
-
     display: flex;
     justify-content: center;
+    
 
 }
 
 .multi-container {
     justify-content: center;
-    background-color: #def2c8;
+    background-color: #7f9f5d;
     padding: 3rem;
-    margin: 1rem;
+    margin: 1rem;;
     width:33.33%;
     display: flex;
     justify-content: center;
