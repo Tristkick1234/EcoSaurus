@@ -14,9 +14,13 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: #CADF83;
+    background-color: white;
+
 }
 
+body>*{
+    padding:1.8rem;
+}
 nav {
     height: 2.5rem;
     background-color: #7f9f5d18;
@@ -75,26 +79,13 @@ ul {
 }
 
 
-.hero>* {
-    /* position: absolute; */
-   
-
-}
-
-/* .hero>img {
-    width: 20rem;
-    
-   
-} */
-
-
 .hero>h2 {
     width:40%;
     position: relative;
     left: 10%;
     color: white;
 
-    color: #c7e7a3;
+    color: #d3efb3;
 
     background-color:#7f9f5d3d;
    
@@ -107,42 +98,103 @@ ul {
 }
 .hero>h3{
     position: relative;
-    font-size: 2rem;
+    font-size:1.5rem;
     width:50%;
     left:10%;
 }
 
 
 .midbar{
-   
+    background-image: linear-gradient(#7f9f5d,#CADF83,white);
     height: 1rem;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    background-color: #7f9f5d;
+  
 }
 
-.container {
+.intro{
     display: flex;
-    height: 40vh;
+    flex-direction: column;
+    
+    justify-content: center;
+    height: 70vh;
+    
+}
+.intro>*{
+    color: #CADF83;
+
+}
+.intro>h2{
+    font-size:2rem;
+    margin-left: auto;
+    max-width: 70%;
+}
+
+.container{
+    display: flex;
+    padding: 2rem;
+   
     align-items: center;
-    /*background-color: #7f9f5d;*/
-    display: flex;
+
     justify-content: center;
 
-    width: 90%;
-    margin: auto;
+    margin: 0 auto;
+ 
     
+}
+
+.container>*{
+
+    background-color: #7f9f5d;
+
+    padding:2rem;
+    margin:1rem;
+    
+}
+
+.overlay{
+    background-image: linear-gradient(rgb(152, 172, 111),rgba(73, 105, 73, 0.584));
+    
+    width:100%;
+    height: 100%;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    width:100%;
+
+    grid-template-columns: auto auto ;
+    justify-content: center;
+
+    
+    
+    background-image: url("/photos/forest.jpg");
+    background-size: cover;
+ 
+    
+    
+
+    /* background-color: #d3efb3; */
+    
+}
+
+
+
+.grid-child{
+
+    width:100%;
+    height: 100%;
+    background-size: 100% 100%;
+    
+    /* background-color: #7f9f5d; */
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    background-color: #0000003e;
 
 }
 
-.multi-container {
-    justify-content: center;
-    background-color: #7f9f5d;
-    padding: 3rem;
-    margin: 1rem;;
-    width:33.33%;
-    display: flex;
-    justify-content: center;
-    
-
+.grid-child:hover{
+    background-color: orange;
 }
