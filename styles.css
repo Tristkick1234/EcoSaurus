@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
-@font-face{
+
+/* Define font for locally hosted font */
+@font-face {
     font-family: "Stolzl";
-    src:url("/stolzl/stolzl_light.otf")
+    src: url("/stolzl/stolzl_light.otf");
 }
 
+/* Define root font size */
+:root {
+    font-size: 16px;
+}
+
+/* Apply global styles */
 * {
     font-family: "Stolzl";
     box-sizing: border-box;
@@ -11,190 +19,177 @@
     color: white;
 }
 
+/* Body styles */
 body {
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
     background-color: white;
-
 }
 
-body>*{
-    padding:1.8rem;
+/* Apply padding to all direct children of body */
+body > * {
+    padding: 1.8rem;
 }
+
+/* Navigation bar styles */
 nav {
     height: 2.5rem;
     background-color: #7f9f5d18;
     display: flex;
     justify-content: left;
-    
     width: 100%;
-    color: white; 
-    position:fixed;
+    color: white;
+    position: fixed;
     z-index: 4;
 }
 
-
-
+/* Navigation list styles */
 ul {
     list-style-type: none;
-    display:flex;  
+    display: flex;
     justify-content: space-evenly;
     width: 50%;
-    
     align-items: center;
-   
-    
-    
+    padding-right: 0.5rem;
 }
 
-#left-nav{
-   
+/* Left navigation item styles */
+#left-nav {
     font-weight: bold;
     color: white;
     font-size: x-large;
     
 }
 
-
+.right-nav{
+ 
+}
+/* Hero section styles */
 .hero {
-    
     height: 100vh;
     background-image: url("/photos/green.jpg");
-    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
-
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-   
-
-
-    /* font-weight: bold;
-    font-size: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-  */
 }
 
-
-.hero>h2 {
-    width:40%;
-    position: relative;
-    left: 10%;
-    color: white;
-
+/* Hero heading styles */
+.hero > h2 {
     color: #d3efb3;
-
-    background-color:#7f9f5d3d;
-   
-    z-index: 1;
-
-    font-size: 4rem;
+    background-color: #7f9f5d3d;
+    font-size: 5rem;
     font-weight: bold;
-   
-
-}
-.hero>h3{
-    position: relative;
-    font-size:1.5rem;
-    width:50%;
-    left:10%;
 }
 
+/* Hero subtitle styles */
+.hero > h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
 
-.midbar{
-    background-image: linear-gradient(#7f9f5d,#CADF83,white);
+/* Midbar styles */
+.midbar {
+    background-image: linear-gradient(#7f9f5d, #CADF83);
     height: 1rem;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+/* Introduction section styles */
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ 
+    min-height: 50vh;
+    width:100%;
+    justify-content: center;
+
+
+    background-color: #CADF83;
+}
+
+.intro>img{
+    max-height:50vh;
   
 }
 
-.intro{
+
+/* Container styles */
+.container {
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
-    height: 70vh;
-    
-}
-.intro>*{
-    color: #CADF83;
-
-}
-.intro>h2{
-    font-size:2rem;
-    margin-left: auto;
-    max-width: 70%;
-}
-
-.container{
-    display: flex;
-    padding: 2rem;
-   
-    align-items: center;
-
-    justify-content: center;
-
-    margin: 0 auto;
+  
  
-    
 }
+.container>h2{
+    font-size: 3rem;
+    align-self: flex-start;
+   
+    color: white;
+}
+.threebar{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 1rem;
+    padding:1rem;
 
-.container>*{
-
+}
+.threebar>h3{
     background-color: #7f9f5d;
-
-    padding:2rem;
-    margin:1rem;
-    
+    padding:1rem;
+    max-width: 33%;
 }
 
-.overlay{
-    background-image: linear-gradient(rgb(152, 172, 111),rgba(73, 105, 73, 0.584));
-    
-    width:100%;
-    height: 100%;
-}
-
-.grid-container{
+/* Grid container styles */
+.grid-container {
     display: grid;
     gap: 10px;
-    width:100%;
-
-    grid-template-columns: auto auto ;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
-
-    
-    
     background-image: url("/photos/forest.jpg");
     background-size: cover;
- 
-    
-    
-
-    /* background-color: #d3efb3; */
-    
+    padding: 1rem;
 }
 
-
-
-.grid-child{
-
-    width:100%;
-    height: 100%;
-    background-size: 100% 100%;
-    
-    /* background-color: #7f9f5d; */
+/* Grid child styles */
+.grid-child {
+    background-color: #0000003e;
     display: flex;
     justify-content: center;
-    padding: 4rem;
-    background-color: #0000003e;
-
+    padding: 3rem;
 }
 
-.grid-child:hover{
+/* Grid child hover effect */
+.grid-child:hover {
     background-color: orange;
+}
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    /* Adjust font size for hero heading */
+    .hero > h2 {
+        font-size: 2rem;
+    }
+    
+    /* Adjust font size for introduction text */
+    .intro > h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust grid container styles for smaller screens */
+    .grid-container {
+        padding: 0.5rem;
+    }
+
+    /* Adjust grid child styles for smaller screens */
+    .grid-child {
+        padding: 1.5rem;
+    }
 }
