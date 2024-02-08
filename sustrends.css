@@ -1,0 +1,70 @@
+/* Define font for locally hosted font */
+
+/* Body styles */
+body {
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Navigation bar styles */
+nav {
+    height: 2.5rem;
+    background-color: #7f9f5d18;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    color: white;
+    position: fixed;
+    z-index: 4;
+}
+
+/* Navigation list styles */
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+/* Left navigation item styles */
+#left-nav {
+    font-weight: bold;
+    color: white;
+    font-size: x-large;
+}
+
+/* Right navigation item styles */
+.right-nav {
+    color: white;
+}
+
+/* Active page navigation item styles */
+.active {
+    font-weight: bold;
+}
+
+/* Content styles */
+.content {
+    padding: 3rem;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.section h2 {
+    color: #7f9f5d;
+}
+
+.section p {
+    margin-bottom: 1rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #7f9f5d18;
+    padding: 1rem;
+    text-align: center;
+}
