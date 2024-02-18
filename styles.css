@@ -142,4 +142,32 @@ body > * {
     .grid-child {
         padding: 1.5rem;
     }
+
+    .intro{ 
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    min-height: 50vh;
+    width:100%;
+    justify-content: center;
+
+
+    }
+    .container{
+        
+        align-content: center;
+        overflow:hidden
+       
+    }
+    .threebar{
+        display: flex;
+        width: min-content;
+        
+        
+       
+    }
+    .intro>img{
+        width: 50%;
+    }
 }

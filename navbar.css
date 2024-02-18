@@ -32,11 +32,13 @@ nav {
 /* Navigation list styles */
 ul {
     list-style-type: none;
+    text-decoration: none;
     display: flex;
     justify-content: space-evenly;
     width: 50%;
     align-items: center;
     padding-right: 0.5rem;
+    
 }
 
 /* Left navigation item styles */
@@ -44,7 +46,7 @@ ul {
     font-weight: bold;
     color: white;
     font-size: x-large;
-    text-decoration: none; /* Remove underline */
+     /* Remove underline */
 }
 
 /* Right navigation item styles */
@@ -56,18 +58,26 @@ ul {
 /* Active page navigation item styles */
 .active {
     font-weight: bold;
+    
+    
 }
+a:link { 
+    text-decoration: none; 
+  
+  } 
 
 /* Media query for smaller screens */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     /* Change flex direction to column */
     nav {
-        flex-direction: column;
+        
         align-items: center;
     }
 
     /* Adjust width of navigation list */
     ul {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 }

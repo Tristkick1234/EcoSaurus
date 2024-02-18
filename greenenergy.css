@@ -5,16 +5,18 @@ body {
     background-image: url("photos/thomas-kelley-JoH60FhTp50-unsplash.jpg");
     background-position: 50%,50%;
     background-size: cover;
-    color: #333;
+   
+
+}
+
+body > * {
+    padding: 1.8rem;
 }
 
 /* Navigation bar styles */
-nav {
-    background-color: #7f9f5d;
-    padding: 1rem;
-}
 
-nav ul {
+
+/* nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -24,7 +26,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #fff;
-}
+}  */
 
 /* Hero section styles */
 .hero {
@@ -70,11 +72,16 @@ nav a {
 .energy-types {
     padding: 5rem 0;
     text-align: center;
+    background-color: #7f9f5d34;
+    
+
+    
 }
 
 .energy-types h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
+  
 }
 
 .energy-grid {
@@ -89,11 +96,33 @@ nav a {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+
 }
+
+.hydro{
+    background-image: url("/photos/prateek-srivastava-BTSBVZd9jWo-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.wind{
+    background-image: url("/photos/sander-weeteling-iGDg_f_mlWo-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.solar{
+    background-image: url("/photos/anders-j-hxUcl0nUsIY-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 
 .energy-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    
+    color: #e9f1e1;
 }
 
 .energy-card p {

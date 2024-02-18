@@ -1,13 +1,17 @@
 /* Define font for locally hosted font */
 
-/* Body styles */
+
 body {
     min-height: 100vh;
     background-color: #f0f0f0;
+    
+    
+}
+body > * {
+    padding: 1.8rem;
 }
 
-/* Navigation bar styles */
-nav {
+/* nav {
     height: 2.5rem;
     background-color: #7f9f5d18;
     display: flex;
@@ -16,9 +20,11 @@ nav {
     color: white;
     position: fixed;
     z-index: 4;
+
+    
 }
 
-/* Navigation list styles */
+
 ul {
     list-style-type: none;
     display: flex;
@@ -28,26 +34,29 @@ ul {
     padding-right: 0.5rem;
 }
 
-/* Left navigation item styles */
+
 #left-nav {
     font-weight: bold;
     color: white;
     font-size: x-large;
 }
 
-/* Right navigation item styles */
+
 .right-nav {
     color: white;
 }
 
-/* Active page navigation item styles */
 .active {
     font-weight: bold;
-}
-
+}  */
 /* Content styles */
 .content {
+    height:100vh;
     padding: 3rem;
+    
+    background-image: url("/photos/david-marcu-78A265wPiO4-unsplash.jpg");
+    background-position: 50%,50%;
+    background-size: cover;
 }
 
 .section {
