@@ -3,7 +3,7 @@
 /* Body styles */
 body {
     min-height: 100vh;
-    background-color: white;
+    background-color: #7f9f5d;
 }
 
 /* Apply padding to all direct children of body */
@@ -142,8 +142,8 @@ h2{
 /* Media query for smaller screens */
 @media screen and (max-width: 1000px) {
     /* Adjust font size for hero heading */
-    .hero > h2 {
-        font-size: 2rem;
+    .hero > h1 {
+        font-size: 3rem;
     }
 
     /* Adjust font size for introduction text */
