@@ -21,14 +21,22 @@ body > * {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+   
 }
 
+
+
 /* Hero heading styles */
-.hero > h2 {
+.hero > h1 {
     color: #d3efb3;
     background-color: #7f9f5d3d;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
+}
+
+h2{
+    font-size: 2rem;
 }
 
 /* Hero subtitle styles */
@@ -68,7 +76,6 @@ body > * {
 }
 
 .container>h2 {
-    font-size: 3rem;
     align-self: flex-start;
     color: white;
 }
