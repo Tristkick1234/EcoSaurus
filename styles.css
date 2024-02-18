@@ -82,9 +82,12 @@ h2{
 
 .cost {
     background-color: #CADF83;
-    padding: 2rem;
-    margin-top: 2rem;
+    padding: 4rem;
+    
     text-align: center;
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .cost h3 {
