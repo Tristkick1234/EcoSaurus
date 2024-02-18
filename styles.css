@@ -83,6 +83,7 @@ h2{
     height: 50vh;
     border-top: 1px solid white;
     
+    
 
     display:flex;
     flex-direction: column;
@@ -92,22 +93,22 @@ h2{
     flex-direction: row;
     justify-content: center;
 
+    
 
 }
 .multi-container>*{
     margin:2rem;
     display: flex;
     flex-direction: column;
+    border-bottom:1px solid red;
+    
 }
 .multi-container>h3>*{
     display: flex;
     
 }
 
-.dot-group{
-    display: flex;
-    flex-direction: row;
-}
+
 .reddot{
     margin:0.25rem;
     width:2rem;
@@ -116,8 +117,14 @@ h2{
     border: 5px solid seagreen;
     border-radius: 100px;
 }
+
+.highlight{
+    color:red;
+    
+}
 .visual{
     background-color: black;
+    border-bottom: 1px solid white;
 }
 .container>h2 {
     align-self: flex-start;
@@ -130,6 +137,7 @@ h2{
     padding: 4rem;
     
     text-align: center;
+   
 
     
 }
@@ -165,6 +173,7 @@ h2{
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
+    align-items: center;
     background-image: url("/photos/forest.jpg");
     background-size: cover;
     padding: 1rem;
@@ -172,6 +181,7 @@ h2{
 
 /* Grid child styles */
 .grid-child {
+    height:100%;
     background-color: #0000003e;
     display: flex;
     justify-content: center;
@@ -181,6 +191,20 @@ h2{
 /* Grid child hover effect */
 .grid-child:hover {
     background-color: orange;
+    
+}
+.dot-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+    
+ }
+
+
+h5{
+    font-style: italic;
 }
 
 /* Media query for smaller screens */
@@ -228,4 +252,28 @@ h2{
         max-width: none; /* Remove maximum width */
         width: 100%; /* Make each item occupy full width */
     }
+
+    .climate{
+        height: fit-content;
+    }
+    .dot-group{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+        justify-content: center;
+    
+        
+        
+     }
+    .dot-group>.reddot{
+       margin: 0;
+    
+        width:2rem;
+        height: 2rem;
+        background-color: red;
+        border: 5px solid seagreen;
+        border-radius: 100px;
+    }
+    
+    
 }
