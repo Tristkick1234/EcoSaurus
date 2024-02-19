@@ -177,6 +177,9 @@ h2{
     background-image: url("/photos/forest.jpg");
     background-size: cover;
     padding: 1rem;
+
+    height: 50vh;
+
 }
 
 /* Grid child styles */
@@ -186,6 +189,11 @@ h2{
     display: flex;
     justify-content: center;
     padding: 3rem;
+
+    
+    align-items: center;
+
+    
 }
 
 /* Grid child hover effect */

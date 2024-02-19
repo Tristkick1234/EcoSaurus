@@ -1,20 +1,16 @@
 /* Global Styles */
 
 body {
-
     background-image: url("photos/thomas-kelley-JoH60FhTp50-unsplash.jpg");
-    background-position: 50%,50%;
+    background-position: 50%, 50%;
     background-size: cover;
-   
-
 }
 
-body > * {
+body>* {
     padding: 1.8rem;
 }
 
 /* Navigation bar styles */
-
 
 /* nav ul {
     list-style-type: none;
@@ -30,7 +26,7 @@ nav a {
 
 /* Hero section styles */
 .hero {
-    background-image: url('photos/green-energy-bg.jpg');
+    background-image: url("photos/green-energy-bg.jpg");
     background-size: cover;
     background-position: center;
     padding: 5rem 0;
@@ -73,22 +69,20 @@ nav a {
     padding: 5rem 0;
     text-align: center;
     background-color: #7f9f5d34;
-    
-
-    
 }
 
 .energy-types h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-  
 }
 
 .energy-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    padding:1rem;
 }
+
 
 .energy-card {
     background-color: #fff;
@@ -96,32 +90,35 @@ nav a {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-
 }
 
-.hydro{
+.energy-card>*{
+    background-color: #5e6f4cfa;
+    border-radius: 3px;
+    padding:0.25rem;
+}
+.hydro {
     background-image: url("/photos/prateek-srivastava-BTSBVZd9jWo-unsplash.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.wind{
+.wind {
     background-image: url("/photos/sander-weeteling-iGDg_f_mlWo-unsplash.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.solar{
+.solar {
     background-image: url("/photos/anders-j-hxUcl0nUsIY-unsplash.jpg");
     background-position: center;
     background-size: cover;
 }
 
-
 .energy-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    
+
     color: #e9f1e1;
 }
 
@@ -145,19 +142,35 @@ nav a {
 }
 
 /* Implementation and Impact sections styles */
-.implementation, .impact {
+.implementation,
+.impact {
     padding: 5rem 0;
     text-align: center;
 }
 
-.implementation h2, .impact h2 {
+.implementation h2,
+.impact h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
-.implementation p, .impact p {
+.implementation p,
+.impact p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
+.geo {
+    background-image: url("/photos/viktor-kiryanov-lAcYPEiau0U-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 /* Footer styles */
+.benefit_css {
+    background-image: url("/photos/yunus-emre-gY2N-6Mc-Hw-unsplash.jpg");
+}
+
+.tips_css {
+    background-image: url("/photos/samuel-marsh-QU_3ucnNg_E-unsplash.jpg");
+}
